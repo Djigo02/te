@@ -43,7 +43,6 @@ public class ProduitServlet extends HttpServlet {
             Produit produit = metier.produitById(produitId);
 
             request.setAttribute("produit", produit);
-
             request.getRequestDispatcher("update.jsp").forward(request,response);
         }
         else
@@ -76,7 +75,7 @@ public class ProduitServlet extends HttpServlet {
                 int res= metier.update(p);
                 if (res > 0)
                 {
-                    response.sendRedirect("success.jsp");
+                    response.sendRedirect("index.jsp");
                 }else {
                     response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Le Produit est introuvable !!!");
                 }

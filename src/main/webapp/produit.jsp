@@ -2,12 +2,9 @@
 <%@ page import="java.util.List" %>
 <%@ page import="sn.dev.crudjee.entity.Produit" %>
 <%@ page import="sn.dev.crudjee.dao.IProduitDao" %>
-<%@ page import="sn.dev.crudjee.dao.ProduitImplDao" %><%--
-  Created by IntelliJ IDEA.
-  User: Abdou Fatah Ndiaye
-  Date: 29/05/2024
-  Time: 23:51
-  To change this template use File | Settings | File Templates.
+<%@ page import="sn.dev.crudjee.dao.ProduitImplDao" %>
+<%--
+  User: Mouhamad DJIGO
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -16,7 +13,7 @@
 %>
 <html>
 <head>
-    <title>Title</title>
+    <title>CRUD JEE</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -24,7 +21,7 @@
 <div class="container mt-5 col-md-5 col-xm-12 col-sm-6 col-md-offset-3">
     <div class="card">
         <div class="card-header center">
-            Simulatuion de credit
+            Ajouter un produit
         </div>
         <div class="card-body">
             <form action="ProduitServlet.do" method="post">
